@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basketball World</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #1e1e2f;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .player-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    img, video, audio {
+      max-width: 100%;
+      display: block;
+      margin: 10px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      background-color: #1e1e2f;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e2f;
+      color: white;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Basketball World</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#history">History</a>
+    <a href="#players">Famous Players</a>
+    <a href="#media">Media Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to The Basketball World</h2>
+    <p>Basketball is one of the world’s most popular sports played by millions across the globe. It brings people together with excitement, passion, and team spirit.</p>
+  </section>
+
+  <section id="history">
+    <h2>History of Basketball</h2>
+    <p>Basketball's history began in 1891 with its invention by James Naismith, a Canadian physical education instructor, in Springfield, Massachusetts. He created the game as a less injury-prone indoor sport to keep athletes active during winter.</p>
+    <img src="C:\Users\Joaquin\OneDrive\Desktop\history of basketball.jpeg" alt="Old basketball image">
+  </section>
+
+  <section id="players">
+    <h2>Famous Basketball Players</h2>
+
+    <h3>LeBron James</h3>
+    <img class="player-img" src="C:\Users\Joaquin\OneDrive\Desktop\lebron1.webp">
+    <p>LeBron James is an American basketball player for the LA Lakers. He's the NBA's all-time leading scorer and has won four championships across 10 Finals appearances.</p>
+
+    <h3>Stephen Curry</h3>
+    <img class="player-img" src="C:\Users\Joaquin\OneDrive\Desktop\steph1.webp" alt="Stephen Curry">
+    <p>Stephen Curry, point guard for the Golden State Warriors, is a four-time NBA champion and one of the greatest shooters in basketball history.</p>
+
+    <h3>Michael Jordan</h3>
+    <img class="player-img" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Michael_Jordan_in_2014.jpg" alt="Michael Jordan">
+    <p>Michael Jordan is widely regarded as the greatest basketball player of all time. He led the Chicago Bulls to six NBA championships and earned five MVP awards.</p>
+  </section>
+
+  <section id="media">
+    <h2>Media Gallery</h2>
+
+    <video controls>
+      <source src="C:\Users\Joaquin\Downloads\This atmosphere in Serbia 😮 (1).mp4" type="video/mp4">
+    </video>
+    <p>This video gives a glimpse into the world of basketball: energy, movement, and emotion on the court.</p>
+
+    <audio controls>
+      <source src="C:\Users\Joaquin\Downloads\Crowd sounds like LeBron is playing at home 😂Nba Jersey 61% OFF! (Link in descr.) (1).mp4" type="audio/mp3">
+    </audio>
+    <p>Listen to the crowd cheer on the players with passion and energy!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Basketball World. All rights reserved.
+  </footer>
+
+</body>
+</html>
+>
